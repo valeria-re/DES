@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DES</title>
+    <link href="https://bootswatch.com/5/darkly/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../DES/css/style.css">
+</head>
+<body>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/tripledes.js"></script>
+
+    <br>
+
+    <div class="col-md-5 offset-md-3 card" style="background-color: rgb(209, 176, 252); border-style: none; border-radius: 10px;" >
+
+        <div class="input-group-prepend" style="margin-top: 4%;background-color: rgb(209, 176, 252); border-style: none; border-radius: 10px;">
+            <center><h1>Cifrado DES</h1></center>
+            <br>
+            <table style="margin: 0 auto;">
+                    <input class="form-control" type="file" id="archivo" oninput="leer()" style="border-style: none; border-radius: 10px ; ">
+                    <br>
+                    <input class="form-control" type="password" placeholder="Clave" id="clave" maxlength="8" minlength="8" style="border-style: none; border-radius: 10px;">
+                <td>
+                    <input class="btn btn-info" type="button" value="Cifrar" onclick="cifrar()" style="background-color: rgb(111, 0, 255); border-style: none;">
+                </td>
+                    <br>
+                <td>
+                    &nbsp;
+                    <input class="btn btn-primary" type="button" value="Descifrar" onclick="descifrar()" style="background-color: rgb(111, 0, 255); border-style: none;">
+                </td>
+                    
+                    <p id="txt"></p>
+                    
+                    <div id="resultado"></div>
+            </table>
+            <br>
+            <center>El texto del archivo seleccionado es:</center>
+            <br>
+            <center><div class="vis" id="visualizar" style="border-style: none; border-radius: 10px ; "></div></center>
+            <br>
+            <br>
+        </div>
+    <script src="../DES/js/logica.js"></script>
+
+</body>
+</html>

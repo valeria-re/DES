@@ -1,0 +1,12 @@
+body{
+    background: rgb(205,139,251);
+    background: radial-gradient(circle, rgba(205,139,251,1) 25%, rgba(205,139,251,1) 38%, rgba(155,27,245,1) 76%, rgba(143,49,238,1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.vis{
+    background-color: aliceblue;
+    width: 80%;
+}
